@@ -86,6 +86,22 @@
   @media (min-width: 700px) {
     main { padding-top: 40px; }
   }
+  /* Mobile: size the image so the whole card, the heading, the first song
+     title and the top of the first player all fit on the opening screen. */
+  @media (max-width: 699px) {
+    main { padding-top: 10px; }
+    .memorial {
+      width: auto;
+      max-width: 100%;
+      max-height: max(320px, calc(100vh - 180px));
+      max-height: max(320px, calc(100svh - 180px));
+      margin: 0 auto;
+      box-shadow: 0 4px 14px rgba(120, 95, 40, 0.12);
+    }
+    h1 { margin: 14px 0 4px; line-height: 1.15; }
+    .rule { margin-bottom: 14px; }
+    h2 { margin-bottom: 8px; line-height: 1.15; }
+  }
 </style>
 </head>
 <body>
